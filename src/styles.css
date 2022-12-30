@@ -1,0 +1,64 @@
+:root {
+    --text-color: #1f4869;
+}
+
+
+.app {
+
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 15px 30px;
+}
+
+
+.search-word {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 21px;
+    color: var(--text-color);
+
+}
+
+.search-word-result {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+
+}
+
+
+.form {
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto;
+}
+
+
+#form-input {
+    margin-inline: 10px;
+    border: 2px solid var(--text-color);
+}
+
+
+.btn.btn-primary {
+    margin-inline: 20px;
+    background-color: #b9cad4;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    transition: all 200ms ease;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.btn.btn-primary:hover {
+    background-color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
