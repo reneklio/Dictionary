@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1113260fee.js" crossorigin="anonymous"></script>
+
+    <title>Dictionary</title>
+</head>
+
+<body>
+    <div class="app">
+
+        <form action="submit" class="form">
+            <input type="text" class="form-control" id="form-input" placeholder="Enter a word" />
+
+            <button type="submit" class="btn btn-primary" id="form-btn-search">
+                SEARCH
+            </button>
+
+
+        </form>
+
+
+        <div class="search-word-result" id="search-word"></div>
+
+
+        <p class="container-fluid">
+            <span class="text-primary text-uppercase">Pronunciation:</span> <span id="search-phonetic"></span>
+        </p>
+
+
+        <p class="container-fluid">
+            <span class="text-primary text-uppercase">Part of language:</span> <span id="search-part-language"></span>
+        </p>
+
+
+        <p class="container-fluid">
+            <span class="text-primary text-uppercase">Synonyms and examples:</span> <span id="search-synonyms"></span>
+        </p>
+
+        <div class="search-word">Meanings</div>
+        <p class="container-fluid">
+        <ul>
+            <li id="search-definition-1"></li>
+            <li id="search-definition-2"></li>
+            <li id="search-definition-3"></li>
+            <li id="search-definition-4"></li>
+        </ul>
+        </p>
+
+        <a class="container-fluid" href="" id="search-wiki" target="_blank">More in Wikipedia</a>
+
+        <script src="src/index.js"></script>
+    </div>
+</body>
+
+</html>
